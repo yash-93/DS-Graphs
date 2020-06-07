@@ -6,7 +6,6 @@ vector<bool> visited;
 void add_edge(vector<pair<int,int> > adj_list[], int u, int v, int weight)
 {
     adj_list[u].push_back(make_pair(v, weight));
-    adj_list[v].push_back(make_pair(u, weight));
 }
 
 void printGraph(vector<pair<int,int> > adj_list[], int V){
